@@ -47,6 +47,7 @@ function Dashboard() {
   const [loadingMail, setLoadingMail] = useState(false);
 
   const [outputData, setOutputData] = useState(EMPTY_OUTPUT);
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
 
   const handleMeetingChange = (e) => {
     const { name, value } = e.target;
@@ -79,7 +80,7 @@ function Dashboard() {
     setLoadingRun(true);
 
     try {
-      const res = await fetch("http://localhost:4000/api/run", {
+      const res = await fetch(`${API_URL}/api/run`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -122,7 +123,7 @@ function Dashboard() {
     setLoadingMail(true);
 
     try {
-      const res = await fetch("http://localhost:4000/api/human-input", {
+      const res = await fetch(`${API_URL}/api/human-input`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
