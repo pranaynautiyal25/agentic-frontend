@@ -80,7 +80,7 @@ function Dashboard() {
     setLoadingRun(true);
 
     try {
-      const res = await fetch(`${API_URL}/api/run`, {
+      const res = await fetch(`${API_URL}/run`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -123,7 +123,7 @@ function Dashboard() {
     setLoadingMail(true);
 
     try {
-      const res = await fetch(`${API_URL}/api/human-input`, {
+      const res = await fetch(`${API_URL}/human-input`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
