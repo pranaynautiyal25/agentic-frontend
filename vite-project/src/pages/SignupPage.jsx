@@ -26,7 +26,7 @@ function SignupPage() {
   return (
     <div className="shell">
       <div className="auth-card">
-        <p className="auth-title">Access // Signup</p>
+        <p className="auth-title"> Signup</p>
         <p className="auth-subtitle">Dummy signup page. No backend auth is applied.</p>
 
         <form onSubmit={handleSubmit} className="auth-form">

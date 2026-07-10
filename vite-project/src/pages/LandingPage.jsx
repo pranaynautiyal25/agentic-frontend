@@ -6,18 +6,17 @@ function LandingPage() {
   return (
     <div className="shell" style={{ alignItems: "flex-start", justifyContent: "center" }}>
       <section className="hero">
-        <span className="hero-badge">MEETING AGENT // v1</span>
+        <span className="hero-badge">EASE YOUR MEETING NOTES</span>
 
         <h1 className="hero-title">
           Notes in. Draft out.
           <br />
-          You approve before it sends.
+          Easy Your Messy Notes
         </h1>
 
         <p className="hero-text">
           Paste in messy meeting notes and the agent structures them, builds a
-          document, and drafts a mail. Nothing goes out until you review the
-          subject and body yourself.
+          document, and drafts a mail. Review your draft and what not .
         </p>
 
         <div className="hero-actions">
@@ -35,8 +34,8 @@ function LandingPage() {
         <div className="console-panel" aria-hidden="true">
           <div className="line"><span className="arrow">&gt;</span>parsing messy notes...</div>
           <div className="line"><span className="arrow">&gt;</span>structuring summary + action plan</div>
-          <div className="line"><span className="arrow">&gt;</span>generating document</div>
-          <div className="line wait"><span className="arrow">&gt;</span>awaiting human review<span className="cursor-blink"></span></div>
+          <div className="line"><span className="arrow">&gt;</span>draft mail</div>
+          <div className="line wait"><span className="arrow">&gt;</span>and what not...<span className="cursor-blink"></span></div>
         </div>
       </section>
     </div>

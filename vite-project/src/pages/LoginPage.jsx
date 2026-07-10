@@ -25,7 +25,7 @@ function LoginPage() {
   return (
     <div className="shell">
       <div className="auth-card">
-        <p className="auth-title">Access // Login</p>
+        <p className="auth-title">Login</p>
         <p className="auth-subtitle">Dummy login page. No authentication is applied.</p>
 
         <form onSubmit={handleSubmit} className="auth-form">

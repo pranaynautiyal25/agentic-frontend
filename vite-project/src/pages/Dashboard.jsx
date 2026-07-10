@@ -167,10 +167,10 @@ function Dashboard() {
       <header className="masthead">
         <div className="masthead-inner">
           <div className="masthead-brand">
-            <span className="masthead-mark">MA</span>
+            <span className="masthead-mark">Welcome</span>
             <div className="masthead-title-block">
-              <h1 className="masthead-title">Meeting Agent Console</h1>
-              <p className="masthead-subtitle">Capture → compose → human review, before anything sends</p>
+              <h1 className="masthead-title">Dashboard</h1>
+              <p className="masthead-subtitle">Agentic(Sequential and Conditional) Flow appied with some made tools. try ... </p>
             </div>
           </div>
 
@@ -184,7 +184,7 @@ function Dashboard() {
 
       <main className="dashboard-container">
         <section className="panel submission-panel">
-          <div className="panel-eyebrow">Step 01 — Capture</div>
+          <div className="panel-eyebrow">1: Prompt 1, write messy notes| Prompt 2: write what to do ,decides tool</div>
           <h2 className="panel-title">Meeting input</h2>
 
           <form className="dashboard-form" onSubmit={handleRunWorkflow}>
@@ -337,7 +337,7 @@ function Dashboard() {
         */}
 
         <section className="panel report-panel">
-          <div className="panel-eyebrow">Step 02 — Review &amp; output</div>
+          <div className="panel-eyebrow">Final output and Showcasing of tools called according to the prompt</div>
           <h2 className="panel-title">Results</h2>
 
           <div className="report-grid">
@@ -364,7 +364,7 @@ function Dashboard() {
           </div>
 
           <div className="mail-preview">
-            <h3>Mail preview — awaiting your review</h3>
+            <h3>Will be Called when asked for </h3>
 
             {outputData.human_input_url ? (
               <a
